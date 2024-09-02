@@ -7,6 +7,7 @@ import { Provider } from "react-redux";
 // import { PersistGate } from "redux-persist/integration/react";
 import store from "./store";
 import Script from "next/script";
+import Footer from "./components/footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,6 +37,7 @@ export default function RootLayout({ children }) {
             <div className="bg-white min-h-screen relative sm:px-20">
               <div className=" mx-auto">{children}</div>
             </div>
+            <Footer />
           {/* </PersistGate> */}
         </Provider>
        
