@@ -2,25 +2,24 @@
 
 
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
-// import { persistReducer, persistStore, REHYDRATE } from "redux-persist";
+import { persistReducer, persistStore } from "redux-persist";
 import authSlice from "./slices/authSlices";
-// import storage from "redux-persist/lib/storage";
+import cookieStorage from "./cookieStorage";
 
 // Persist config
-// const persistAuth = {
-//   key: authSlice.name,
-//   storage,
-//   REHYDRATE,
-// };
+const persistAuth = {
+  key: authSlice.name,
+  storage: cookieStorage
+};
 
 // Combining all reducers
-// const rootReducers = combineReducers({
-//   [authSlice.name]: persistReducer(persistAuth, authSlice.reducer),
-// });
-
 const rootReducers = combineReducers({
-  [authSlice.name]: authSlice.reducer,
+  [authSlice.name]: persistReducer(persistAuth, authSlice.reducer),
 });
+
+// const rootReducers = combineReducers({
+//   [authSlice.name]: authSlice.reducer,
+// });
 
 const store = configureStore({
   reducer: rootReducers,
@@ -28,4 +27,4 @@ const store = configureStore({
 });
 
 export default store;
-// export const persistor = persistStore(store);
+export const persistor = persistStore(store);

@@ -1,14 +1,10 @@
-// "use client";
 
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navbar/navbar";
-// import { Provider } from "react-redux";
-// import { PersistGate } from "redux-persist/integration/react";
-// import store from "./store";
 import Script from "next/script";
 import Footer from "./components/footer/Footer";
-import { StorProvider } from "./store/StorProvider";
+import { StoreProvider } from "./store/StoreProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,8 +25,7 @@ export default function RootLayout({ children }) {
         ></Script>
       </head>
       <body className={inter.className}>
-        <StorProvider>
-          {/* <PersistGate loading={null} persistor={persistor}> */}
+        <StoreProvider>
             <div className="text-right text-sm bg-gray-100 text-slate-500 pr-8 pt-1">
               Hotline:111000
             </div>
@@ -39,8 +34,7 @@ export default function RootLayout({ children }) {
               <div className=" mx-auto">{children}</div>
             </div>
             <Footer />
-          {/* </PersistGate> */}
-        </StorProvider>
+        </StoreProvider>
        
       </body>
     </html>

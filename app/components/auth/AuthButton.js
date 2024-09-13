@@ -2,11 +2,9 @@
 
 // app/components/AuthButton.js
 import {
-  loadAuth,
-  loginReducer,
-  logoutreducer,
+  login,
+  logout,
 } from "@/app/store/slices/authSlices";
-import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 function AuthButton() {
@@ -16,16 +14,12 @@ function AuthButton() {
   const handleLogin = () => {
     const user = { name: "Jane Doe" };
     const token = "abcdef";
-    dispatch(loginReducer({  user, token  }));
+    dispatch(login({  user, token  }));
   };
 
   const handleLogout = () => {
-    dispatch(logoutreducer());
+    dispatch(logout());
   };
-
-  useEffect(() => {
-    dispatch(loadAuth());
-  }, []);
 
   console.log(isAuthenticated);
   return (
