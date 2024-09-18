@@ -44,7 +44,7 @@ npm run dev or bun dev
 ## Screenshots 
 
 Home page with Navbar, Hero section and Trending Items.
-![Home Page Screenshot](./public/images/screenshots/home.png)
+![Home Page Screenshot](./public/images/screenshots/Home.png)
 
 Footer section with Displayed Some Kid's Items.
 ![Footer Section Screenshot](./public/images/screenshots/footer.png)
