@@ -42,7 +42,30 @@ npm run dev or bun dev
 
 
 ## Screenshots 
-![Homepage Screenshot](./public/images/screenshots/Home.png)
+Home page with Navbar, Hero section and Tranding Items.
+![Homepage Screenshot](./public/images/screenshots/home.png)
+
+Footer section with Displayed Some Kid's Items.
+![Footer Section Screenshot](./public/images/screenshots/footer.png)
+
+Account page.
+![Account Page Screenshot](./public/images/screenshots/account.png)
+
+Men Categories page with Filtered T-Shirt.
+![Men Categories Screenshot](./public/images/screenshots/men.png)
+
+Product Details page.
+![Product Details Screenshot](./public/images/screenshots/productdetails.png)
+
+Size Guide page.
+![Sizeguide Screenshot](./public/images/screenshots/sizeguide.png)
+
+Cart page.
+![Cart Page Screenshot](./public/images/screenshots/cart.png)
+
+Checkout page.
+![Checkout Page Screenshot](./public/images/screenshots/checkout.png)
+
 
 
 First, run the development server:
