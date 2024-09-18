@@ -42,7 +42,7 @@ npm run dev or bun dev
 
 
 ## Screenshots 
-![Homepage Screenshot](@/public/images/screenshots/Home.png)
+![Homepage Screenshot](./public/images/screenshots/Home.png)
 
 
 First, run the development server:
