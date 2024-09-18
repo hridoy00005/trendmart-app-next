@@ -42,13 +42,14 @@ npm run dev or bun dev
 
 
 ## Screenshots 
-Home page with Navbar, Hero section and Tranding Items.
-![Homepage Screenshot](./public/images/screenshots/home.png)
+
+Home page with Navbar, Hero section and Trending Items.
+![Home Page Screenshot](./public/images/screenshots/home.png)
 
 Footer section with Displayed Some Kid's Items.
 ![Footer Section Screenshot](./public/images/screenshots/footer.png)
 
-Account page.
+Account page with Order, Favourites, Address and Profile Categories.
 ![Account Page Screenshot](./public/images/screenshots/account.png)
 
 Men Categories page with Filtered T-Shirt.
